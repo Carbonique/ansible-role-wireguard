@@ -1,0 +1,6 @@
+galaxy_info:
+  role_name: wireguard
+  author: carbonique
+  description: Role for installing pre-existing wireguard configs
+  license: "license (MIT)"
+  min_ansible_version: 2.10
