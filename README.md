@@ -5,7 +5,7 @@
 
 Wireguard install for the lazy 
 
-This role installs a pre-existing Wireguard config(default `etc/wireguard`) compressed into a `.tgz` file and encrypted using `ansible-vault`
+This role installs a pre-existing Wireguard config(default `etc/wireguard`) that has already been compressed into a `.tgz` file and encrypted using `ansible-vault`
 
 The config `.tgz` has to be named `wireguard-encrypted.tgz`
 
