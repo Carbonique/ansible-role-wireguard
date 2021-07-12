@@ -1,0 +1,4 @@
+- name: wg0_restart
+  service:
+    name: "wg-quick@wg0"
+    state: restarted

@@ -1,0 +1,23 @@
+- name: Install wireguard
+  apt:
+    name: wireguard
+    state: present
+
+- name: Create wireguard directory
+  file:
+    path: /etc/wireguard
+    owner: root
+    group: root
+    mode: 600
+    state: directory
+
+- name: Extract wireguard-encrypted.tgz into /etc/wireguard
+  ansible.builtin.unarchive:
+    src: "{{ tgz_path }}/wireguard-encrypted.tgz"
+    dest: /etc/wireguard
+    decrypt: yes
+    owner: root
+    group: root
+    mode: 600
+    extra_opts: [--strip-components=2]
+  notify: wg0_restart
