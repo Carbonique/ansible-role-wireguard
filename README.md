@@ -15,7 +15,7 @@ The config `.tgz` has to be named `wireguard-encrypted.tgz`
 Add the following to `requirements.yml`:
 
 ```
-- src: git@gitlab.com:carbonique/ansible-role-wireguard.git
+- src: https://github.com/carbonique/ansible-role-wireguard.git
   scm: git
   name: wireguard
   version: #Leave empty for latest. To download a specific version: use the tag as listed in repo
